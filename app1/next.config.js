@@ -2,6 +2,9 @@ const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 const path = require("path");
 
 module.exports = {
+  env: {
+    apiUrl: 'https://pokeapi.co/api/v2/pokemon',
+  },
   webpack(config, options) {
     const { isServer } = options;
 
